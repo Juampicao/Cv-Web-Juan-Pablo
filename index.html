@@ -11,74 +11,74 @@
     <title>Juan Pablo Parada Cao</title>
 </head>
 
-<body class="scroll-smooth  text-white" style="background-color: #171717;">
+<body class="scroll-smooth  text-white bg-black" ">
 
     <!-------------------------------Inicio NAVBAR  ---------------------------------------------->
 
-    <nav class="flex items-center justify-between flex-wrap  p-6">
+    <nav class=" flex items-center justify-between flex-wrap p-6">
 
-        <!-------------------------------DarkMode y Lenguaje   ---------------------------------------------->
-        <div class="flex gap-x-5 justify-center items-center ">
-            <div class="">
-                <label class="switch ">
-                    <input type="checkbox">
-                    <span class="slider"></span>
-                </label>
-            </div>
-
-            <div class=" flex space-x-3">
-                <button> <img src="./img/ingles.png" alt=""> </button>
-                <button> <img src="./img/españa.png" alt=""> </button>
-
-            </div>
+    <!-------------------------------DarkMode y Lenguaje   ---------------------------------------------->
+    <div class="flex gap-x-5 justify-center items-center ">
+        <div class="">
+            <label class="switch ">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
         </div>
-        <!-------------------------------Inicio NAVBAR  ---------------------------------------------->
+
+        <div class=" flex space-x-3">
+            <button> <img src="./img/ingles.png" alt=""> </button>
+            <button> <img src="./img/españa.png" alt=""> </button>
+
+        </div>
+    </div>
+    <!-------------------------------Inicio NAVBAR  ---------------------------------------------->
 
 
-        <div class="flex items-center flex-shrink-0 text-white mr-6">
-            <a href="#banner" class="flex items-start">
-                <img src="./img/logo.png" alt="">
-                <img src="./img/logo2.png" alt="">
+    <div class="flex items-center flex-shrink-0 text-white mr-6">
+        <a href="#banner" class="flex items-start">
+            <img src="./img/logo.png" alt="">
+            <img src="./img/logo2.png" alt="">
+        </a>
+    </div>
+    <div class="block md:hidden">
+        <button id="boton"
+            class="flex items-center px-3 py-2 border rounded text-white border-stone-400 hover:text-white hover:border-white">
+            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <title>Menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+        </button>
+    </div>
+    <div id="menu" class="w-full  flex-grow-reverse  hidden md:flex md:items-center md:w-auto">
+        <div class="text-sm md:flex-grow uppercase sm:mt-0  ">
+
+            <a href="#aboutMe"
+                class="block mt-4 md:inline-block md:mt-0 text-white hover:text-white mr-4 hover:border-b-4 hover:border-red-500">
+                About Me </a>
+            <a href="#skills"
+                class="block mt-4 md:inline-block md:mt-0 text-white hover:text-white mr-4 hover:border-b-4 hover:border-red-500">
+                Skills
+            </a>
+            <a href="#proyects"
+                class="block mt-4 md:inline-block md:mt-0 text-white hover:text-white mr-4 hover:border-b-4 hover:border-red-500">
+                Proyects
+            </a>
+            <a href="#contact"
+                class="block mt-4 md:inline-block md:mt-0 text-white hover:text-white mr-4 hover:border-b-4 hover:border-red-500">
+                Contact
+            </a>
+            <a href="#cv"
+                class="block mt-4 md:inline-block md:mt-0 text-white hover:text-white mr-4 hover:border-b-4 hover:border-red-500">
+                Cv
+            </a>
+            <a href="#proyectos"
+                class="block mt-4 md:inline-block md:mt-0 text-white hover:text-white mr-4 hover:border-b-4 hover:border-red-500">
+                proyectos
             </a>
         </div>
-        <div class="block md:hidden">
-            <button id="boton"
-                class="flex items-center px-3 py-2 border rounded text-white border-stone-400 hover:text-white hover:border-white">
-                <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <title>Menu</title>
-                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-                </svg>
-            </button>
-        </div>
-        <div id="menu" class="w-full  flex-grow-reverse  hidden md:flex md:items-center md:w-auto">
-            <div class="text-sm md:flex-grow uppercase sm:mt-0  ">
 
-                <a href="#aboutMe"
-                    class="block mt-4 md:inline-block md:mt-0 text-white hover:text-white mr-4 hover:border-b-4 hover:border-red-500">
-                    About Me </a>
-                <a href="#skills"
-                    class="block mt-4 md:inline-block md:mt-0 text-white hover:text-white mr-4 hover:border-b-4 hover:border-red-500">
-                    Skills
-                </a>
-                <a href="#proyects"
-                    class="block mt-4 md:inline-block md:mt-0 text-white hover:text-white mr-4 hover:border-b-4 hover:border-red-500">
-                    Proyects
-                </a>
-                <a href="#contact"
-                    class="block mt-4 md:inline-block md:mt-0 text-white hover:text-white mr-4 hover:border-b-4 hover:border-red-500">
-                    Contact
-                </a>
-                <a href="#cv"
-                    class="block mt-4 md:inline-block md:mt-0 text-white hover:text-white mr-4 hover:border-b-4 hover:border-red-500">
-                    Cv
-                </a>
-                <a href="#proyectos"
-                    class="block mt-4 md:inline-block md:mt-0 text-white hover:text-white mr-4 hover:border-b-4 hover:border-red-500">
-                    proyectos
-                </a>
-            </div>
-
-        </div>
+    </div>
     </nav>
 
 
@@ -89,7 +89,8 @@
 
     <!-------------------------------About Me   ---------------------------------------------->
 
-    <div id="aboutMe" class="bg-slate-900 p-10  " style="min-height: 300px;">
+    <div id="aboutMe" class="bg-slate-900 p-10  "
+        style="min-height: 300px; background-image: url(./img/banner3.png); background-size: cover; background-repeat: no-repeat; ">
 
 
         <!--------  Efecto Moving Leters  .------------ -->
@@ -104,7 +105,7 @@
 
 
         <button type="menu"
-            class="text-white hover:bg-white hover:text-zinc-900 py-2 px-14  my-5 block  border  border-white  rounded-sm uppercase ">
+            class="text-white bg-white text-zinc-900 hover:bg-slate-200 py-2 px-14  my-5 block  border  border-white  rounded-sm uppercase ">
             <a href="#contact"> Contact Me</a>
         </button>
 
@@ -184,8 +185,13 @@
                     class="w-[250px] h-[250px] proyects shadow-lg p-5 px-12 border border-red-700 shadow-2xl "
                     alt="proyectos1" style="background-color:   #292424">
 
-
-                <div class="flex items-center">
+                <button class="learn-more my-3">
+                    <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text tracking-wide font-normal ">View Proyect </span>
+                </button>
+                <!-- <div class="flex items-center">
 
                     <p class="text-red-600"> View Proyect</p>
                     <svg class="max-w-[25px]" xmlns="http://www.w3.org/2000/svg"
@@ -196,7 +202,8 @@
                         <line x1="13" y1="18" x2="19" y2="12" />
                         <line x1="13" y1="6" x2="19" y2="12" />
                     </svg>
-                </div>
+                   
+                </div> -->
             </div>
 
         </div>
@@ -207,11 +214,18 @@
 
                 <h3 class=" py-2">Proyecto Enecuatro</h3>
 
-                <img src="./img/proyectos1.jpeg" class="w-[250px] h-[250px] proyects shadow-lg p-5 px-12"
-                    alt="proyectos1" style="background-color:   #515151">
+                <img src="./img/proyectos1.jpeg"
+                    class="w-[250px] h-[250px] proyects shadow-lg p-5 px-12 border border-red-700 shadow-2xl "
+                    alt="proyectos1" style="background-color:   #292424">
 
+                <button class="learn-more my-3">
+                    <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text tracking-wide font-normal ">View Proyect </span>
 
-                <div class="flex items-center">
+                </button>
+                <!-- <div class="flex items-center">
 
                     <p class="text-red-600"> View Proyect</p>
                     <svg class="max-w-[25px]" xmlns="http://www.w3.org/2000/svg"
@@ -222,7 +236,7 @@
                         <line x1="13" y1="18" x2="19" y2="12" />
                         <line x1="13" y1="6" x2="19" y2="12" />
                     </svg>
-                </div>
+                </div> -->
             </div>
 
         </div>
@@ -232,11 +246,18 @@
 
                 <h3 class=" py-2">Proyecto Enecuatro</h3>
 
-                <img src="./img/proyectos2.jpeg" class="w-[250px] h-[250px] proyects shadow-lg p-5 px-12"
-                    alt="proyectos1" style="background-color:   #383838">
+                <img src="./img/proyectos2.jpeg"
+                    class="w-[250px] h-[250px] proyects shadow-lg p-5 px-12 border border-red-700 shadow-2xl "
+                    alt="proyectos1" style="background-color:   #292424">
 
+                <button id="viewProyect" class="learn-more my-3">
+                    <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text tracking-wide font-normal ">View Proyect </span>
 
-                <div class="flex items-center">
+                </button>
+                <!-- <div class="flex items-center">
 
                     <p class="text-red-600"> View Proyect</p>
                     <svg class="max-w-[25px]" xmlns="http://www.w3.org/2000/svg"
@@ -247,7 +268,7 @@
                         <line x1="13" y1="18" x2="19" y2="12" />
                         <line x1="13" y1="6" x2="19" y2="12" />
                     </svg>
-                </div>
+                </div> -->
             </div>
 
         </div>
@@ -258,14 +279,16 @@
 
     <!---------------------------------------- Inicio Contacto  ----------------------------------------------->
 
-    <div id="contact" class="p-5 text-white bg-slate-800 ">
-        <h1 class="uppercase  text-5xl mt-5">contact</h1>
+    <div class="bg-red-500  w-full mt-24" style="height: 1px;"></div>
+
+    <div id="contact" class="p-5 text-white  ">
+        <h1 class="uppercase  text-5xl mt-5">contact me</h1>
 
         <div class="max-w-7xl py-5 mx-auto text-center sm:grid sm:grid-cols-2">
             <div class=" capitalize ">
                 <!-- <h1 class="uppercase  text-5xl mt-5">contact</h1> -->
 
-                <div class="flex justify-center mx-auto ">
+                <div class="flex sm:justify-center sm:mx-auto ">
 
                     <ul class="space-y-3 mt-10">
                         <li class="flex items-center">
@@ -288,17 +311,15 @@
                             <a target="blank" href="https://wa.me/1132870046" class="pl-4">
                                 paradacao.juan@gmail.com</a>
                         </li>
+
+                        <li class=""> <img src="./img/juampicv.jpg"
+                                class=" rounded-full w-[150px] border-red-700 border border-4" alt="">
+                        </li>
+
                 </div>
 
 
 
-                <div class="">
-                    <li class="flex space-x-8 justify-center ">
-                        <img src="./img/contacto1.png" alt="">
-                        <img src="./img/contacto2.png" alt="">
-                        <img src="./img/contacto1.png" alt="">
-                    </li>
-                </div>
                 </ul>
             </div>
             <form action="submit" class="text-black">
@@ -310,8 +331,8 @@
 
                 </div>
                 <div class="flex justify-center sm:justify-start">
-                    <button type="button"
-                        class="text-white sm:ml-3 hover:bg-white hover:text-zinc-900 py-2 px-14  my-5 block  border  border-white  rounded-sm uppercase ">
+                    <button id="enviar" type="button"
+                        class="text-white sm:ml-3 bg-white text-zinc-900 hover:bg-slate-300  py-2 px-14  my-5 block  border  border-white  rounded-sm uppercase ">
                         enviar
                     </button>
                 </div>
@@ -323,6 +344,8 @@
 
 
     <!---------------------------------------- Footer  ----------------------------------------------->
+
+    <div class="bg-red-500  w-full mt-24" style="height: 1px;"></div>
 
     <footer class="max-w-[1500px] mx-auto">
 
