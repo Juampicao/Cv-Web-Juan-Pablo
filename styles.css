@@ -1,0 +1,172 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+body {
+    font-family: 'Bebas Neue', cursive;
+    animation: efectoGeneral 2s; 
+}
+
+
+/* ------- Efectos Transition ---------- */
+
+
+
+@keyframes efectoGeneral {
+ 0% {
+ opacity:0;
+ }
+ 25%{
+ opacity:0.33;
+ }
+  25%{
+ opacity:0.66;
+ }
+ 100% {
+ opacity:1;
+ }
+}
+
+/* -------Slide In Transition----------- */
+
+
+/* ----- Skills Media Query ---- */
+
+
+/* ------- Efecto zoom imagenes ------------- */
+img {
+  /* transition: transform .2s; Animation */
+
+  /* margin: 0 auto; */
+ 
+}
+
+ img:hover {
+ transform: scale(1.05);
+
+  transition-duration: 3000ms;  
+}
+}
+
+
+
+
+}
+/* ------- Efecto zoom imagenes ------------- */
+
+
+/* AboutMe */
+#aboutMe {
+    background-image: url(./img/banner3.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    
+}
+
+
+.proyects {
+   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+.proyects:hover {
+  zoom: 1.25;
+ transition: 0.1s all ease-in-out;
+ cursor: pointer;
+ -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+}
+
+
+
+/* // Dark Mode */
+.switch {
+ --button-width: 3.5em;
+ --button-height: 2em;
+ --toggle-diameter: 1.5em;
+ --button-toggle-offset: calc((var(--button-height) - var(--toggle-diameter)) / 2);
+ --toggle-shadow-offset: 10px;
+ --toggle-wider: 3em;
+ --color-grey: #cccccc;
+ --color-green: #4296f4;
+}
+
+.slider {
+ display: inline-block;
+ width: var(--button-width);
+ height: var(--button-height);
+ background-color: var(--color-grey);
+ border-radius: calc(var(--button-height) / 2);
+ position: relative;
+ transition: 0.3s all ease-in-out;
+}
+
+.slider::after {
+ content: "";
+ display: inline-block;
+ width: var(--toggle-diameter);
+ height: var(--toggle-diameter);
+ background-color: #fff;
+ border-radius: calc(var(--toggle-diameter) / 2);
+ position: absolute;
+ top: var(--button-toggle-offset);
+ transform: translateX(var(--button-toggle-offset));
+ box-shadow: var(--toggle-shadow-offset) 0 calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, 0.1);
+ transition: 0.3s all ease-in-out;
+}
+
+.switch input[type="checkbox"]:checked + .slider {
+ background-color: var(--color-green);
+}
+
+.switch input[type="checkbox"]:checked + .slider::after {
+ transform: translateX(calc(var(--button-width) - var(--toggle-diameter) - var(--button-toggle-offset)));
+ box-shadow: calc(var(--toggle-shadow-offset) * -1) 0 calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, 0.1);
+}
+
+.switch input[type="checkbox"] {
+ display: none;
+}
+
+.switch input[type="checkbox"]:active + .slider::after {
+ width: var(--toggle-wider);
+}
+
+.switch input[type="checkbox"]:checked:active + .slider::after {
+ transform: translateX(calc(var(--button-width) - var(--toggle-wider) - var(--button-toggle-offset)));
+}
+
+
+
+/* Efecto Moving Letters  */
+/* .ml11 {
+  font-weight: 700;
+  font-size: 3.5em;
+}
+
+.ml11 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.ml11 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: #fff;
+  transform-origin: 0 50%;
+}
+
+.ml11 .line1 { 
+  top: 0; 
+  left: 0;
+}
+
+.ml11 .letter {
+  display: inline-block;
+  line-height: 1em;
+} */
