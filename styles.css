@@ -124,14 +124,9 @@ button:hover .button-text {
  img:hover {
  transform: scale(1.05);
 
-  transition-duration: 3000ms;  
+  transition-duration: 500ms;  
 }
-}
 
-
-
-
-}
 /* ------- Efecto zoom imagenes ------------- */
 
 
@@ -145,18 +140,6 @@ button:hover .button-text {
 }
 
 
-.proyects {
-   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
-}
-
-.proyects:hover {
-  zoom: 1.25;
- transition: 0.1s all ease-in-out;
- cursor: pointer;
- -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(0%);
-}
 
 
 
