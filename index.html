@@ -8,182 +8,189 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <title>Gon Pablo Parada Cao</title>
+    <title>Juan Pablo Parada Cao</title>
 </head>
 
-<body class="scroll-smooth  text-white bg-black " id="body">
-    <div class=" loader " id="loader">
-    </div>
-    <div class="hidden" id="divLoader">
+<body class="scroll-smooth text-white " id="body">
 
 
+
+
+    <!-------------------------------Inicio NAVBAR  ---------------------------------------------->
+
+    <nav class=" flex items-center justify-between flex-wrap p-6">
+
+        <!-------------------------------DarkMode y Lenguaje   ---------------------------------------------->
+        <div class="flex gap-x-5 justify-center items-center ">
+            <div class="">
+                <label class="switch" id="switch" onclick="darkModeOn()">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <div class=" flex space-x-3">
+                <button> <img src="./img/ingles.png" alt=""> </button>
+                <button> <img src="./img/españa.png" alt=""> </button>
+
+            </div>
+        </div>
         <!-------------------------------Inicio NAVBAR  ---------------------------------------------->
 
-        <nav class=" flex items-center justify-between flex-wrap p-6">
 
-            <!-------------------------------DarkMode y Lenguaje   ---------------------------------------------->
-            <div class="flex gap-x-5 justify-center items-center ">
-                <div class="">
-                    <label class="switch ">
-                        <input type="checkbox">
-                        <span class="slider"></span>
-                    </label>
-                </div>
+        <div class="flex items-center flex-shrink-0 text-white mr-6">
+            <a href="#banner" class="flex items-start">
+                <img src="./img/logo.png" alt="">
+                <!-- <img src="./img/logo2.png" alt=""> -->
+            </a>
+        </div>
+        <div class="block md:hidden">
+            <button id="boton"
+                class="flex items-center px-3 py-2 border rounded text-white border-stone-400 hover:text-white hover:border-white">
+                <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <title>Menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                </svg>
+            </button>
+        </div>
+        <div id="menu" class="w-full  flex-grow-reverse  hidden md:flex md:items-center md:w-auto">
+            <div class="text-sm md:flex-grow uppercase sm:mt-0  ">
 
-                <div class=" flex space-x-3">
-                    <button> <img src="./img/ingles.png" alt=""> </button>
-                    <button> <img src="./img/españa.png" alt=""> </button>
-
-                </div>
-            </div>
-            <!-------------------------------Inicio NAVBAR  ---------------------------------------------->
-
-
-            <div class="flex items-center flex-shrink-0 text-white mr-6">
-                <a href="#banner" class="flex items-start">
-                    <img src="./img/logo.png" alt="">
-                    <!-- <img src="./img/logo2.png" alt=""> -->
+                <a href="#aboutMe"
+                    class="block mt-4 md:inline-block md:mt-0 text-white hover:text-white mr-4 hover:border-b-4 hover:border-red-500">
+                    About Me </a>
+                <a href="#skills"
+                    class="block mt-4 md:inline-block md:mt-0 text-white hover:text-white mr-4 hover:border-b-4 hover:border-red-500">
+                    Skills
+                </a>
+                <a href="#proyects"
+                    class="block mt-4 md:inline-block md:mt-0 text-white hover:text-white mr-4 hover:border-b-4 hover:border-red-500">
+                    Proyects
+                </a>
+                <a href="#contact"
+                    class="block mt-4 md:inline-block md:mt-0 text-white hover:text-white mr-4 hover:border-b-4 hover:border-red-500">
+                    Contact
+                </a>
+                <a href="#cv"
+                    class="block mt-4 md:inline-block md:mt-0 text-white hover:text-white mr-4 hover:border-b-4 hover:border-red-500">
+                    Cv
+                </a>
+                <a href="#proyectos"
+                    class="block mt-4 md:inline-block md:mt-0 text-white hover:text-white mr-4 hover:border-b-4 hover:border-red-500">
+                    proyectos
                 </a>
             </div>
-            <div class="block md:hidden">
-                <button id="boton"
-                    class="flex items-center px-3 py-2 border rounded text-white border-stone-400 hover:text-white hover:border-white">
-                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <title>Menu</title>
-                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-                    </svg>
-                </button>
-            </div>
-            <div id="menu" class="w-full  flex-grow-reverse  hidden md:flex md:items-center md:w-auto">
-                <div class="text-sm md:flex-grow uppercase sm:mt-0  ">
-
-                    <a href="#aboutMe"
-                        class="block mt-4 md:inline-block md:mt-0 text-white hover:text-white mr-4 hover:border-b-4 hover:border-red-500">
-                        About Me </a>
-                    <a href="#skills"
-                        class="block mt-4 md:inline-block md:mt-0 text-white hover:text-white mr-4 hover:border-b-4 hover:border-red-500">
-                        Skills
-                    </a>
-                    <a href="#proyects"
-                        class="block mt-4 md:inline-block md:mt-0 text-white hover:text-white mr-4 hover:border-b-4 hover:border-red-500">
-                        Proyects
-                    </a>
-                    <a href="#contact"
-                        class="block mt-4 md:inline-block md:mt-0 text-white hover:text-white mr-4 hover:border-b-4 hover:border-red-500">
-                        Contact
-                    </a>
-                    <a href="#cv"
-                        class="block mt-4 md:inline-block md:mt-0 text-white hover:text-white mr-4 hover:border-b-4 hover:border-red-500">
-                        Cv
-                    </a>
-                    <a href="#proyectos"
-                        class="block mt-4 md:inline-block md:mt-0 text-white hover:text-white mr-4 hover:border-b-4 hover:border-red-500">
-                        proyectos
-                    </a>
-                </div>
-
-            </div>
-        </nav>
-
-
-        <!-------------------------------FIN NAVBAR  ---------------------------------------------->
-
-
-
-
-        <!-------------------------------About Me   ---------------------------------------------->
-
-        <div id="aboutMe" class="bg-slate-900 p-10  "
-            style="min-height: 300px; background-image: url(./img/banner3.png); background-size: cover; background-repeat: no-repeat; ">
-
-
-            <!--------  Efecto Moving Leters  .------------ -->
-            <h1 class="ml11">
-                <span class="text-wrapper">
-                    <span class="line line1"></span>
-                    <span class=" hidden sm:flex text-5xl font-black"> Hello, i Am a Developer.</span>
-                    <span class=" xs sm:hidden text-5xl font-black "> Hello, <br> i Am a Develeloper.</span>
-
-                </span>
-            </h1>
-
-
-            <button type="menu"
-                class="text-white bg-white text-zinc-900 hover:bg-slate-200 py-2 px-14  my-5 block  border  border-white  rounded-sm uppercase ">
-                <a href="#contact"> Contact Me</a>
-            </button>
-
-            <!-- <p class="mt-10"> Always Learning</p> -->
-
-            <p class="italic mt-5"> "You cant connect the dots looking forward, you can only connect them looking
-                backward."
-                <span> - Steve
-                    Jobs</span>
-            </p>
 
         </div>
-
-        <!------------------------------- Fin About Me   ---------------------------------------------->
-
-
-        <!---------------------------------------- Inicio Skills  ----------------------------------------------->
+    </nav>
 
 
-        <main id="skills" class="p-5 ">
-            <p class="text-red-500">What i do</p>
-            <h1 class="text-5xl mb-5">Skills</h1>
+    <!-------------------------------FIN NAVBAR  ---------------------------------------------->
 
-            <div class=" flex flex-col gap-y-5 md:grid md:grid-cols-3 md:justify-between md:gap-x-0 md:gap-y-0">
-                <!-- <div class="flex flex-col space-y-5  sm:justify-center sm:gap-x-3"> -->
-                <div class="h-32 w-64 p-5  border border-red-500 mx-auto">
-                    <h3> Web Development </h3>
-                    <p class="pt-2 text-sm text-slate-400">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Deserunt,
-                        corrupti?</p>
 
-                </div>
-                <div class="h-32 w-64 p-5 border border-red-500 mx-auto">
-                    <h3> React Applications </h3>
-                    <p class="pt-2 text-sm text-slate-400">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Deserunt,
-                        corrupti?</p>
 
-                </div>
-                <div class="h-32 w-64 p-5  border border-red-500 mx-auto">
-                    <h3> Basic Software </h3>
-                    <p class="pt-2 text-sm text-slate-400">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Deserunt,
-                        corrupti?</p>
 
-                </div>
+    <!-------------------------------About Me   ---------------------------------------------->
+
+    <div id="aboutMe" class="bg-slate-900 p-10  "
+        style="min-height: 300px; background-image: url(./img/banner3.png); background-size: cover; background-repeat: no-repeat; ">
+
+
+        <!--------  Efecto Moving Leters  .------------ -->
+        <h1 class="ml11">
+            <span class="text-wrapper">
+                <span class="line line1"></span>
+                <span class=" hidden sm:flex text-5xl font-black tracking-wide ">
+                    Hello, i am <br>
+                    < DeveloperWeb />
+                </span>
+                <span class=" xs sm:hidden text-5xl font-black  tracking-wide"> Hello, <br> i Am a Develeloper.</span>
+
+            </span>
+        </h1>
+
+
+        <button type="menu"
+            class="tracking-wider text-white bg-white text-zinc-900 hover:bg-slate-200 py-2 px-14  my-5 block  border  border-white  rounded-sm uppercase ">
+            <a href="#contact"> Contact Me</a>
+        </button>
+
+        <!-- <p class="mt-10"> Always Learning</p> -->
+
+        <p class="italic mt-5 tracking-wider"> "You cant connect the dots looking forward, you can only connect them
+            looking
+            backward."
+            <span> - Steve
+                Jobs</span>
+        </p>
+
+    </div>
+
+    <!------------------------------- Fin About Me   ---------------------------------------------->
+
+
+    <!---------------------------------------- Inicio Skills  ----------------------------------------------->
+
+
+    <main id="skills" class="p-5 ">
+        <p class="text-red-500">What i do</p>
+        <h1 class="text-5xl mb-5">Skills</h1>
+
+        <div
+            class="max-w-7xl  flex flex-col gap-y-5 md:grid md:grid-cols-3 md:justify-between md:gap-x-0 md:gap-y-0 md:mx-auto">
+            <!-- <div class="flex flex-col space-y-5  sm:justify-center sm:gap-x-3"> -->
+            <div class="h-32 w-64 p-5  border border-red-500 mx-auto">
+                <h3> Web Development </h3>
+                <p class="pt-2 text-sm text-slate-400 tracking-wider	"> Html, css, javacript, tailwind, <br> boostrap,
+                    react & node
+                </p>
+
             </div>
+            <div class="h-32 w-64 p-5 border border-red-500 mx-auto">
+                <h3> Responsive Design </h3>
+                <p class="pt-2 text-sm text-slate-400 tracking-wider"> Mobile First Designs Lorem ipsum dolor sit amet.
+                    Lorem, ipsum dolor.</p>
 
-        </main>
+            </div>
+            <div class="h-32 w-64 p-5  border border-red-500 mx-auto">
+                <h3> Basic Software </h3>
+                <p class="pt-2 text-sm text-slate-400 tracking-wider">Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit.
+                    Deserunt,
+                    corrupti?</p>
 
-        <!---------------------------------------- Fin Skills  ----------------------------------------------->
+            </div>
+        </div>
+
+    </main>
+
+    <!---------------------------------------- Fin Skills  ----------------------------------------------->
 
 
-        <!---------------------------------------- Inicio Proyects  ----------------------------------------------->
+    <!---------------------------------------- Inicio Proyects  ----------------------------------------------->
 
-        <div class="bg-red-500  w-full mt-24" style="height: 1px;"></div>
-        <div id="proyects " class="p-5 space-y-5 ">
-            <h1 class="text-5xl mb-5">Proyects </h1>
+    <div class="bg-red-500  w-full mt-24" style="height: 1px;"></div>
+    <section id="proyects " class="p-5  ">
+        <p class="text-red-500">Learning By Doing</p>
 
+        <h1 class="text-5xl mb-5">Proyects </h1>
 
+        <div class="max-w-7xl lg:grid lg:grid-cols-3  lg:mx-auto">
             <div class="flex justify-center  ">
-                <div class="   flex-col ">
+                <div class="flex-col ">
 
-                    <h3 class=" py-2">Proyecto Enecuatro</h3>
+                    <h3 class=" py-2 tracking-wider">Proyecto Citas Veterinaria</h3>
 
                     <img src="./img/proyecto3.jpeg"
                         class="w-[250px] h-[250px] proyects shadow-lg p-5 px-12 border border-red-700 shadow-2xl cursor-pointer"
                         alt="proyectos1" style="background-color:   #292424">
 
-                    <button class="learn-more my-3">
-                        <span class="circle" aria-hidden="true">
-                            <span class="icon arrow"></span>
-                        </span>
-                        <span class="button-text tracking-wide font-normal ">View Proyect </span>
+                    <button class="learn-more my-3"> <a target="_blank" href="https://citasreactjuampi.netlify.app/">
+                            <span class="circle" aria-hidden="true">
+                                <span class="icon arrow"></span>
+                            </span>
+                            <span class="button-text tracking-wide font-normal tracking-wider">View Proyect </span>
+                        </a>
                     </button>
 
                 </div>
@@ -194,18 +201,18 @@
             <div class="flex justify-center  ">
                 <div class="   flex-col ">
 
-                    <h3 class=" py-2">Proyecto Enecuatro</h3>
+                    <h3 class=" py-2 tracking-wider">Proyecto Juego Memoria</h3>
 
                     <img src="./img/proyectos1.jpeg"
                         class="w-[250px] h-[250px] proyects shadow-lg p-5 px-12 border border-red-700 shadow-2xl  cursor-pointer"
                         alt="proyectos1" style="background-color:   #292424">
 
-                    <button class="learn-more my-3">
-                        <span class="circle" aria-hidden="true">
-                            <span class="icon arrow"></span>
-                        </span>
-                        <span class="button-text tracking-wide font-normal ">View Proyect </span>
-
+                    <button class="learn-more my-3"> <a target="_blank" href="https://juegomemoriajuampi.netlify.app/">
+                            <span class="circle" aria-hidden="true">
+                                <span class="icon arrow"></span>
+                            </span>
+                            <span class="button-text tracking-wide font-normal tracking-wider">View Proyect </span>
+                        </a>
                     </button>
 
                 </div>
@@ -215,145 +222,191 @@
             <div class="flex justify-center  ">
                 <div class="   flex-col ">
 
-                    <h3 class=" py-2">Proyecto Enecuatro</h3>
+                    <h3 class=" py-2 tracking-wider">Proyecto Enecuatro</h3>
 
                     <img src="./img/proyectos2.jpeg"
                         class="w-[250px] h-[250px] proyects shadow-lg p-5 px-12 border border-red-700 shadow-2xl cursor-pointer "
                         alt="proyectos1" style="background-color:   #292424">
 
-                    <button id="viewProyect" class="learn-more my-3">
-                        <span class="circle" aria-hidden="true">
-                            <span class="icon arrow"></span>
-                        </span>
-                        <span class="button-text tracking-wide font-normal ">View Proyect </span>
-
+                    <button id="viewProyect" class="learn-more my-3"> <a target="_blank"
+                            href="https://enecuatro.netlify.app/">
+                            <span class="circle" aria-hidden="true">
+                                <span class="icon arrow"></span>
+                            </span>
+                            <span class="button-text tracking-wide font-normal tracking-wider">View Proyect </span>
+                        </a>
                     </button>
-                    <!-- <div class="flex items-center">
 
-                    <p class="text-red-600"> View Proyect</p>
-                    <svg class="max-w-[25px]" xmlns="http://www.w3.org/2000/svg"
-                        class="icon icon-tabler icon-tabler-arrow-right" width="56" height="56" viewBox="0 0 24 24"
-                        stroke-width="1.5" stroke="#ff2825" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <line x1="5" y1="12" x2="19" y2="12" />
-                        <line x1="13" y1="18" x2="19" y2="12" />
-                        <line x1="13" y1="6" x2="19" y2="12" />
-                    </svg>
-                </div> -->
                 </div>
 
             </div>
         </div>
+    </section>
 
-        <!---------------------------------------- Fin Proyects  ----------------------------------------------->
-
-
-        <!---------------------------------------- Inicio Contacto  ----------------------------------------------->
-
-        <div class="bg-red-500  w-full mt-24" style="height: 1px;"></div>
-
-        <div id="contact" class="p-5 text-white  ">
-            <h1 class="uppercase  text-5xl mt-5">contact me</h1>
-
-            <div class="max-w-7xl py-5 mx-auto text-center sm:grid sm:grid-cols-2">
-                <div class=" capitalize ">
-                    <!-- <h1 class="uppercase  text-5xl mt-5">contact</h1> -->
-
-                    <div class="grid grid-cols-2 sm:flex sm:justify-center sm:mx-auto ">
-
-                        <div>
-                            <ul class="space-y-3 mt-10">
-                                <li class="flex items-center">
-                                    <a target="blank"
-                                        href="https://www.linkedin.com/in/juan-pablo-parada-cao-7a51a7237/">
-                                        <img src="./img/linkedin.png" alt="linkedin"> </a>
-                                    <a target="blank"
-                                        href="https://www.linkedin.com/in/juan-pablo-parada-cao-7a51a7237/"
-                                        class="pl-4">
-                                        Search Me on Linkedin</a>
-
-                                </li>
-                                <li class="flex items-center">
-                                    <a target="blank" href="https://wa.me/1132870046"> <img src="./img/whatsapp.png"
-                                            alt="Whatsapp">
-                                    </a>
-                                    <a target="blank" href="https://wa.me/1132870046" class="pl-4"> Send me a
-                                        message</a>
-                                </li>
-                                <li class="flex items-center">
-                                    <a target="blank" href="https://wa.me/1132870046"> <img src="./img/mail.png" alt="">
-                                    </a>
-                                    <a target="blank" href="https://wa.me/1132870046" class="pl-4">
-                                        paradacao.juan@gmail.com</a>
-                                </li>
-                        </div>
+    <!---------------------------------------- Fin Proyects  ----------------------------------------------->
 
 
+    <!---------------------------------------- Inicio Contacto  ----------------------------------------------->
 
-                        <div class="justify-center">
-                            <li class=""> <img src="./img/juampicv.jpg"
-                                    class="float-right  rounded-full w-[150px] border-red-700 border border-4" alt="">
+    <div class="bg-red-500  w-full mt-24" style="height: 1px;"></div>
+
+    <div id="contact" class="p-5 text-white tracking-wider  ">
+
+        <h1 class="uppercase  text-5xl mt-5">contact me</h1>
+
+
+        <div class="max-w-7xl py-5 mx-auto text-center sm:grid sm:grid-cols-2">
+            <div class=" capitalize ">
+                <!-- <h1 class="uppercase  text-5xl mt-5">contact</h1> -->
+
+                <div class="grid grid-cols-2 sm:flex sm:justify-center sm:mx-auto ">
+
+                    <div>
+
+                        <li class="flex"> <img src="./img/juampicv.jpg"
+                                class=" rounded-full w-[150px] border-red-700 border border-4" alt="">
+                        </li>
+
+
+                        <ul class=" space-y-3  mt-4 text-sm">
+                            <li class="flex items-center">
+                                <a target="blank" href="https://www.linkedin.com/in/juan-pablo-parada-cao-7a51a7237/">
+                                    <img src="./img/linkedin.png" class="min-w-[40px]" alt="linkedin"> </a>
+                                <a target="blank" href="https://www.linkedin.com/in/juan-pablo-parada-cao-7a51a7237/"
+                                    class="pl-4">
+                                    Linkedin </a>
+
                             </li>
-                        </div>
-
+                            <li class="flex items-center">
+                                <a target="blank" href="https://wa.me/1132870046"> <img src="./img/whatsapp.png"
+                                        class="min-w-[40px]" alt="Whatsapp">
+                                </a>
+                                <a target="blank" href="https://wa.me/1132870046" class="pl-4">
+                                    whatsapp</a>
+                            </li>
+                            <li class="flex items-center">
+                                <a target="blank" href="https://wa.me/1132870046"> <img src="./img/mail.png"
+                                        class="min-w-[45px]" alt="">
+                                </a>
+                                <a target=" blank" href="https://wa.me/1132870046" class="pl-4 text-xs ">
+                                    paradacao.juan@gmail.com</a>
+                            </li>
+                            <li class="flex items-center">
+                                <a target="blank" href="https://wa.me/1132870046"> <img src="./img/githubrojo.png"
+                                        class="min-w-[50px]" alt="">
+                                </a>
+                                <a target=" blank" href="https://github.com/Juampicao?tab=repositories" class="pl-4 ">
+                                    Github</a>
+                            </li>
                     </div>
 
 
 
-                    </ul>
+
+
                 </div>
-                <form action="submit" class="text-black">
-                    <div class="grid grid-rows-5 gap-4 mt-5 mx-3 sm:mr-10 md:mr-20">
-                        <input type="text" placeholder="Nombre" class="p-4 py-3  w-full border rounded-sm">
-                        <input type="text" placeholder="Email" class="p-4 py-3 w-full  border rounded-sm">
-                        <input type="text" placeholder="Empresa" class="p-4 py-3 w-full border rounded-sm">
-                        <input type="text" placeholder="Mensaje" class="p-4 py-3 w-full border rounded-sm row-span-2">
 
-                    </div>
-                    <div class="flex justify-center sm:justify-start">
-                        <button id="enviar" type="button"
-                            class="text-white sm:ml-3 bg-white text-zinc-900 hover:bg-slate-300  py-2 px-14  my-5 block  border  border-white  rounded-sm uppercase ">
-                            enviar
-                        </button>
-                    </div>
-                </form>
+
+
+                </ul>
             </div>
+            <form action="submit" class="text-black mt-10 sm:mt-0">
+                <div class="grid grid-rows-5 gap-4 mt-5 mx-3 sm:mr-10 md:mr-20">
+                    <input type="text" placeholder="Nombre" class="p-4 py-3  w-full border rounded-sm">
+                    <input type="text" placeholder="Email" class="p-4 py-3 w-full  border rounded-sm">
+                    <input type="text" placeholder="Empresa" class="p-4 py-3 w-full border rounded-sm">
+                    <input type="text" placeholder="Mensaje" class="p-4 py-3 w-full border rounded-sm row-span-2">
+
+                </div>
+                <div class="flex justify-center sm:justify-start">
+                    <button id="enviar" type="button"
+                        class="text-white sm:ml-3 bg-white text-zinc-900 hover:bg-slate-300  py-2 px-14  my-5 block  border  border-white  rounded-sm uppercase ">
+                        enviar
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <button type="menu"
+        class="flex mx-auto tracking-wider text-white bg-white text-zinc-900 hover:bg-slate-400 py-2 px-14  my-5 block  border  border-white  rounded-sm uppercase ">
+        <a href="/img/Resuelto 11 practico.pdf" download="ParadaCaoJuanPablo_CV"> Download Cv</a>
+    </button>
+    <!---------------------------------------- Fin Contacto  ----------------------------------------------->
+
+    <!---------------------------------------- OTROS  ----------------------------------------------->
+    <!-- <div class="bg-red-500  w-full mt-24" style="height: 1px;"></div>
+    <div id="contact" class="p-5 text-white  ">
+        <h1 class="uppercase  text-5xl mt-5">Otros</h1>
+
+        <div class="loader flex mx-auto ">
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
         </div>
 
-        <!---------------------------------------- Fin Contacto  ----------------------------------------------->
+        <a href="/img/Resuelto 11 practico.pdf" download="ParadaCaoJuanPablo_CV">
+            <button class="bg-indigo-700 px-5 py-3 rounded-lg m-3 tracking-wider"> Download CV</button>
+        </a>
+
+        <img src="./img/juampiemoji4.png" class="max-w-[250px]" alt="">
+        <img src="./img/juampiemoji.png" class="max-w-[250px]" alt="">
+        <img src="./img/juampiemoji1.png" class="max-w-[250px]" alt="">
+        <img src="./img/juampiemoji2.png" class="max-w-[250px]" alt="">
+        <img src="./img/juampiemoji3.png" class="max-w-[250px]" alt="">
 
 
-        <!---------------------------------------- Footer  ----------------------------------------------->
+    </div> -->
+    <!---------------------------------------- OTROS  ----------------------------------------------->
 
-        <div class="bg-red-500  w-full mt-24" style="height: 1px;"></div>
+    <!---------------------------------------- Footer  ----------------------------------------------->
 
-        <footer class="max-w-[1500px] mx-auto">
+    <div class="bg-red-500  w-full mt-2 sm:mt-24" style="height: 1px;"></div>
 
-            <!-- <div class="flex justify-evenly my-10">
-            <div class="my-auto">
-                <a href="#" class="flex items-start ">
-                    <img class="" src="./img/logo.png" alt="">
-                    <img src="./img/logo2.png" alt="">
-                </a>
-            </div> -->
+    <footer class="max-w-[1500px] mx-auto">
 
 
+        <div class="p-5 text-center flex justify-between w-4/5 mx-auto">
+            <p>Parada Cao Juan Pablo</p>
+            <p>2022</p>
 
+        </div>
 
-            <!-- <div class="sm:pt-36 text-xs sm:text-sm lg:text-xl"> -->
-            <!-- text-center mt-5 sm:pt-36 sm:mt-0 text-xs sm:text-sm lg:text-base -->
-            <div class="p-5 text-center flex justify-between w-4/5 mx-auto">
-                <p>Parada Cao Juan Pablo</p>
-                <p>2022</p>
+    </footer>
 
-            </div>
-
-        </footer>
-    </div>
     <!---------------------------------------- Fin  Footer  ----------------------------------------------->
 
 
     <script src="./app.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    'xs': '320px',
+
+                    'sm': '550px',
+                    // => @media (min-width: 640px) { ... }
+
+                    'md': '749px',
+                    // => @media (min-width: 768px) { ... }
+
+                    'lg': '1024px',
+                    // => @media (min-width: 1024px) { ... }
+
+                    'xl': '1280px',
+                    // => @media (min-width: 1280px) { ... }
+
+                    '2xl': '1536px',
+                    // => @media (min-width: 1536px) { ... }
+                },
+            }
+        }
+    </script>
 </body>
 
 </html>

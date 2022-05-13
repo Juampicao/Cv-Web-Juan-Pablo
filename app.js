@@ -1,27 +1,17 @@
 const boton = document.querySelector("#boton");
 const menu = document.querySelector("#menu");
+const body = document.getElementById("body");
 
 boton.addEventListener("click", () => {
   menu.classList.toggle("hidden");
 });
 
-function addClass() {
-  loader.classList.add("hidden");
-}
+// Loading
 
-function spinner() {
-  let divLoader = document.getElementById("divLoader");
-  divLoader.classList.remove("hidden");
-  let loader = document.getElementById("loader");
-  loader.classList.add("desaparecer");
-  setTimeout(addClass, 1000);
-  // loader.fadeOut();
-}
+// Switch DarkMode
 
-setTimeout(spinner, 2000);
-let body = document.getElementById("body");
+// let botonDarkMode = document.getElementsByClassName("switch");
 
-// Aparece el spinner
-// Esta 2 segundos
-// Desaparecer FadeOUT (add.hidden) o .fadeout
-// Body remove(hidden)
+// function darkModeOn() {
+//   body.classList.add("darkMode");
+// }

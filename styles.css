@@ -3,7 +3,9 @@
 body {
     font-family: 'Bebas Neue', cursive;
     animation: efectoGeneral 2s; 
+    background-color: black;
 }
+
 
 
 /* ------- Efectos Transition ---------- */
@@ -199,56 +201,150 @@ button:hover .button-text {
 .switch input[type="checkbox"]:checked:active + .slider::after {
  transform: translateX(calc(var(--button-width) - var(--toggle-wider) - var(--button-toggle-offset)));
 }
-
-
-
-.loader {
- border: 0 solid transparent;
- border-radius: 50%;
- width: 100px;
- height: 100px;
- position: absolute;
- margin: 40%;
-}
-
-.loader::before,
-.loader::after {
- content: '';
- border: 7px solid #ccc;
- border-radius: 50%;
- width: inherit;
- height: inherit;
- position: absolute;
- animation: loader 2s linear infinite;
- opacity: 0;
-}
-
-.loader::before {
- animation-delay: 1s;
-}
-
-@keyframes loader {
+/* From uiverse.io by @Z-C-Code */
+@keyframes square-animation {
  0% {
-  transform: scale(1);
-  opacity: 0;
+  left: 0;
+  top: 0;
+ }
+
+ 10.5% {
+  left: 0;
+  top: 0;
+ }
+
+ 12.5% {
+  left: 32px;
+  top: 0;
+ }
+
+ 23% {
+  left: 32px;
+  top: 0;
+ }
+
+ 25% {
+  left: 64px;
+  top: 0;
+ }
+
+ 35.5% {
+  left: 64px;
+  top: 0;
+ }
+
+ 37.5% {
+  left: 64px;
+  top: 32px;
+ }
+
+ 48% {
+  left: 64px;
+  top: 32px;
  }
 
  50% {
-  opacity: 1;
+  left: 32px;
+  top: 32px;
+ }
+
+ 60.5% {
+  left: 32px;
+  top: 32px;
+ }
+
+ 62.5% {
+  left: 32px;
+  top: 64px;
+ }
+
+ 73% {
+  left: 32px;
+  top: 64px;
+ }
+
+ 75% {
+  left: 0;
+  top: 64px;
+ }
+
+ 85.5% {
+  left: 0;
+  top: 64px;
+ }
+
+ 87.5% {
+  left: 0;
+  top: 32px;
+ }
+
+ 98% {
+  left: 0;
+  top: 32px;
  }
 
  100% {
-  transform: scale(0);
-  opacity: 0;
+  left: 0;
+  top: 0;
  }
 }
 
-
-@keyframes desaparecer {
-    from { opacity: 1; }
-    to   { opacity: 0; }
+.loader {
+ position: relative;
+ /* z-index: 99; */
+ width: 96px;
+ height: 96px;
+ transform: rotate(45deg);
 }
 
-.desaparecer{
-  animation: desaparecer 2000ms;
+.loader-square {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 28px;
+ height: 28px;
+ margin: 2px;
+ border-radius: 0px;
+ background: white;
+ background-size: cover;
+ background-position: center;
+ background-attachment: fixed;
+ animation: square-animation 10s ease-in-out infinite both;
+}
+
+.loader-square:nth-of-type(0) {
+ animation-delay: 0s;
+}
+
+.loader-square:nth-of-type(1) {
+ animation-delay: -1.4285714286s;
+}
+
+.loader-square:nth-of-type(2) {
+ animation-delay: -2.8571428571s;
+}
+
+.loader-square:nth-of-type(3) {
+ animation-delay: -4.2857142857s;
+}
+
+.loader-square:nth-of-type(4) {
+ animation-delay: -5.7142857143s;
+}
+
+.loader-square:nth-of-type(5) {
+ animation-delay: -7.1428571429s;
+}
+
+.loader-square:nth-of-type(6) {
+ animation-delay: -8.5714285714s;
+}
+
+.loader-square:nth-of-type(7) {
+ animation-delay: -10s;
+}
+
+
+.darkMode {
+  background-color: rgb(77, 2, 2);   
 }
