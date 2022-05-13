@@ -22,16 +22,16 @@
 
         <!-------------------------------DarkMode y Lenguaje   ---------------------------------------------->
         <div class="flex gap-x-5 justify-center items-center ">
-            <div class="">
+            <!-- <div class="w-">
                 <label class="switch" id="switch" onclick="darkModeOn()">
                     <input type="checkbox">
                     <span class="slider"></span>
                 </label>
-            </div>
+            </div> -->
 
             <div class=" flex space-x-3">
-                <button> <img src="./img/ingles.png" alt=""> </button>
-                <button> <img src="./img/españa.png" alt=""> </button>
+                <button> <img src="./img/ingles.png" class="max-w-[35px]" alt=""> </button>
+                <button> <img src="./img/españa.png" class="max-w-[35px]" alt=""> </button>
 
             </div>
         </div>
@@ -88,9 +88,9 @@
 
     <!-------------------------------About Me   ---------------------------------------------->
 
-    <div id="aboutMe" class="text-white p-10 flex lg:justify-center gap-x-5 max-w-7xl" style="min-height: 300px; ">
+    <div id="aboutMe" class="text-white p-10 flex  gap-x-5 max-w-7xl" style="min-height: 300px; ">
 
-        <div class="mt-0 md:mt-7">
+        <div class="mt-0 md:mt-7 sm:mx-auto ">
 
             <!--------  Efecto Moving Leters  .------------ -->
             <h1 class="ml11">
@@ -104,6 +104,11 @@
 
                 </span>
             </h1>
+
+            <div>
+                <img src="./img/juampiemoji1cortado.png" class="flex my-3 sm:hidden max-w-[150px] sm:max-w-[250px] "
+                    alt="">
+            </div>
 
 
             <button type="menu"
@@ -119,8 +124,10 @@
                     Jobs</span>
             </p>
         </div>
+
         <div>
-            <img src="./img/juampiemoji1cortado.png" class="max-w-[250px] " alt="">
+            <img src="./img/juampiemoji1cortado.png"
+                class="hidden sm:flex max-w-[150px] sm:max-w-[250px] justify-start " alt="">
         </div>
     </div>
 
@@ -137,20 +144,20 @@
         <div
             class="max-w-7xl  my-10 flex flex-col gap-y-5 md:grid md:grid-cols-3 md:justify-between md:gap-x-0 md:gap-y-0 md:mx-auto">
             <!-- <div class="flex flex-col space-y-5  sm:justify-center sm:gap-x-3"> -->
-            <div class="h-32 w-64 p-5  border border-red-500 mx-auto">
+            <div class="border border-red-500 p-5 min-w-[200px] max-w-[300px] min-h-[100px] mx-auto">
                 <h3> Web Development </h3>
-                <p class="pt-2 text-sm text-slate-400 tracking-wider	"> Html, css, javacript, tailwind, <br> boostrap,
-                    react & node
+                <p class="pt-2 text-sm text-slate-400 tracking-wider"> Html, css, javacript, tailwind, boostrap,
+                    react & node Lorem, ipsum.
                 </p>
 
             </div>
-            <div class="h-32 w-64 p-5 border border-red-500 mx-auto">
+            <div class="border border-red-500 p-5 min-w-[200px] max-w-[300px] min-h-[100px] mx-auto">
                 <h3> Responsive Design </h3>
                 <p class="pt-2 text-sm text-slate-400 tracking-wider"> Mobile First Designs Lorem ipsum dolor sit amet.
                     Lorem, ipsum dolor.</p>
 
             </div>
-            <div class="h-32 w-64 p-5  border border-red-500 mx-auto">
+            <div class="border border-red-500 p-5 min-w-[200px] max-w-[300px] min-h-[100px] mx-auto">
                 <h3> Basic Software </h3>
                 <p class="pt-2 text-sm text-slate-400 tracking-wider">Lorem ipsum dolor sit amet consectetur adipisicing
                     elit.
