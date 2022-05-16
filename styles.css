@@ -348,3 +348,21 @@ button:hover .button-text {
 .darkMode {
   background-color: rgb(77, 2, 2);   
 }
+
+
+/* Carrousel Iconos Lenguajes Propgramacion */
+.carrousel {
+  overflow: auto;
+  width: 100%;
+
+}
+
+.content > img {
+  height: 6rem;
+  max-width: 6rem;
+  min-width: 5rem;
+  overflow: auto;
+}
+
+
+/* Fin  Carrousel  Lenguajes Propgramacion*/
