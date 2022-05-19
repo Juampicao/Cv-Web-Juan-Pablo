@@ -4,6 +4,8 @@ body {
     font-family: 'Bebas Neue', cursive;
     animation: efectoGeneral 2s; 
     background-color: black;
+   
+    
 }
 
 
@@ -366,3 +368,14 @@ button:hover .button-text {
 
 
 /* Fin  Carrousel  Lenguajes Propgramacion*/
+
+ /* MediaQuery Button contactme y CV  */
+@media only screen and (min-width: 320px) and (max-width: 385px) {
+    #contactButton, #cvButton {
+       padding-left: 10px;
+       padding-right: 10px;
+
+    }
+}
+
+

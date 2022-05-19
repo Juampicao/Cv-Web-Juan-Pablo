@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <script src="https://cdn.tailwindcss.com"></script>
 
     <title>Juan Pablo Parada Cao</title>
@@ -93,7 +95,7 @@
         <div class="mt-0 md:mt-7 sm:mx-auto ">
 
             <!--------  Efecto Moving Leters  .------------ -->
-            <h1 class="ml11">
+            <h1 data-aos="fade-left" class="ml11">
                 <span class="text-wrapper">
                     <span class=" hidden md:flex text-5xl font-black ">
                         Hello, i am <b class="text-red-500"> &nbsp Web developer.</b>
@@ -110,11 +112,16 @@
                     alt="">
             </div>
 
-
-            <button type="menu"
-                class="text-white bg-white text-zinc-900 hover:bg-slate-200 py-2 px-14  my-5 block  border  border-white  rounded-sm uppercase ">
-                <a href="#contact"> Contact Me</a>
-            </button>
+            <div class="block space-y-3 xs:flex xs:space-y-0 xs:gap-x-2 sm:my-5 ">
+                <button type="menu" id="contactButton"
+                    class="text-white bg-white text-zinc-900 hover:bg-slate-200 py-2 px-10   block  border  border-white  rounded-sm uppercase ">
+                    <a href="#contact"> Contact Me</a>
+                </button>
+                <button type="menu" id="cvButton"
+                    class="text-white bg-slate-400 text-zinc-900 hover:bg-slate-200 py-2 px-9   block  border  border-white  rounded-sm uppercase  ">
+                    <a href="/img/Cv Parada Cao Juan Pablo 2022.pdf" download="ParadaCaoJuanPablo_CV"> Download Cv</a>
+                </button>
+            </div>
 
             <!-- <p class="mt-10"> Always Learning</p> -->
 
@@ -144,20 +151,23 @@
         <div
             class="max-w-7xl  my-10 flex flex-col gap-y-5 md:grid md:grid-cols-3 md:justify-between md:gap-x-0 md:gap-y-0 md:mx-auto">
             <!-- <div class="flex flex-col space-y-5  sm:justify-center sm:gap-x-3"> -->
-            <div class="border border-red-500 p-5 min-w-[200px] max-w-[300px] min-h-[100px] mx-auto">
+            <div data-aos="fade-right"
+                class="border border-red-500 p-5 min-w-[200px] max-w-[300px] min-h-[100px] mx-auto">
                 <h3> Web Development </h3>
                 <p class="pt-2 text-sm text-slate-400 tracking-wider"> Html, css, javacript, tailwind, boostrap,
                     react & node Lorem, ipsum.
                 </p>
 
             </div>
-            <div class="border border-red-500 p-5 min-w-[200px] max-w-[300px] min-h-[100px] mx-auto">
+            <div data-aos="fade-left"
+                class="border border-red-500 p-5 min-w-[200px] max-w-[300px] min-h-[100px] mx-auto">
                 <h3> Responsive Design </h3>
                 <p class="pt-2 text-sm text-slate-400 tracking-wider"> Mobile First Designs Lorem ipsum dolor sit amet.
                     Lorem, ipsum dolor.</p>
 
             </div>
-            <div class="border border-red-500 p-5 min-w-[200px] max-w-[300px] min-h-[100px] mx-auto">
+            <div data-aos="fade-right"
+                class="border border-red-500 p-5 min-w-[200px] max-w-[300px] min-h-[100px] mx-auto">
                 <h3> Basic Software </h3>
                 <p class="pt-2 text-sm text-slate-400 tracking-wider">Lorem ipsum dolor sit amet consectetur adipisicing
                     elit.
@@ -288,7 +298,7 @@
             lg:gap-x-6 max-w-7xl
             ">
 
-            <div class="contenedor_proyecto p-12 text-left bg-slate-900 space-y-5">
+            <div data-aos="flip-left" class="contenedor_proyecto p-12 text-left bg-slate-900 space-y-5">
                 <img src="./img/enecuatroscreen2_iphone13starlight_portrait.png" class="h-80 flex mx-auto"
                     alt="proyecto1">
                 <h3 class="text-red-500 text-xl">Enecuatro</h3>
@@ -306,7 +316,7 @@
             </div>
 
 
-            <div class="contenedor_proyecto p-12 text-left bg-slate-900 space-y-5">
+            <div data-aos="flip-left" class="contenedor_proyecto p-12 text-left bg-slate-900 space-y-5">
                 <img src="./img/VeterinariaCorte_iphone13starlight_portrait.png" class="h-80 flex mx-auto"
                     alt="proyecto1">
                 <h3 class="text-red-500 text-xl">Citas Veterinaria</h3>
@@ -323,7 +333,7 @@
             </div>
 
 
-            <div class="contenedor_proyecto p-12 text-left bg-slate-900 space-y-5">
+            <div data-aos="flip-left" class="contenedor_proyecto p-12 text-left bg-slate-900 space-y-5">
                 <img src="./img/Juego Memoria_iphone13starlight_portrait.png" class="h-80 flex mx-auto" alt="proyecto1">
                 <h3 class="text-red-500 text-xl">Juego Memoria</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore illo esse sapiente iure inventore
@@ -343,18 +353,18 @@
             <!-- Fin container_proyecto -->
 
 
-            <!-- Boton ver mas proyectos -->
-            <div class="flex pt-10 items-center justify-center mx-auto">
-                <button class="px-5 py-2 bg-slate-500 rounded-lg hover:bg-slate-700 "> See
-                    more
-                    Proyects
-                </button>
-            </div>
+
 
 
 
     </section>
-
+    <!-- Boton ver mas proyectos -->
+    <div class="flex pt-10 items-center justify-center mx-auto">
+        <button class="px-5 py-2 bg-slate-500 rounded-lg hover:bg-slate-700 "> See
+            more
+            Proyects
+        </button>
+    </div>
 
 
 
@@ -367,7 +377,7 @@
         <h1 class="uppercase  text-5xl mt-5">contact me</h1>
 
 
-        <div class="max-w-7xl py-5 mx-auto text-center sm:grid sm:grid-cols-2">
+        <div data-aos="fade-rigth" class="max-w-7xl py-5 mx-auto text-center sm:grid sm:grid-cols-2">
             <div class=" capitalize ">
                 <!-- <h1 class="uppercase  text-5xl mt-5">contact</h1> -->
 
@@ -437,13 +447,15 @@
                     </button>
                 </div>
             </form>
+
         </div>
+        <button type="menu" id="cv"
+            class="flex mx-auto tracking-wider text-white bg-white text-zinc-900 hover:bg-slate-400 py-2 px-14  my-5 block  border  border-white  rounded-sm uppercase ">
+            <a href="/img/Cv Parada Cao Juan Pablo 2022.pdf" download="ParadaCaoJuanPablo_CV"> Download Cv</a>
+        </button>
     </div>
 
-    <button type="menu" id="cv"
-        class="flex mx-auto tracking-wider text-white bg-white text-zinc-900 hover:bg-slate-400 py-2 px-14  my-5 block  border  border-white  rounded-sm uppercase ">
-        <a href="/img/Cv Parada Cao Juan Pablo 2022.pdf" download="ParadaCaoJuanPablo_CV"> Download Cv</a>
-    </button>
+
     <!---------------------------------------- Fin Contacto  ----------------------------------------------->
 
     <!---------------------------------------- OTROS  ----------------------------------------------->
@@ -494,6 +506,13 @@
 
 
     <script src="./app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>     AOS.init({
+            duration: 1500,
+        }) 
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script>
         tailwind.config = {
             theme: {
