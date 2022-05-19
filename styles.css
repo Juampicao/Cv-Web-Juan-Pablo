@@ -379,3 +379,6 @@ button:hover .button-text {
 }
 
 
+button {
+ transition-duration: 350ms;
+}
