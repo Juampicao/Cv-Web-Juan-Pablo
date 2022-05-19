@@ -24,12 +24,7 @@
 
         <!-------------------------------DarkMode y Lenguaje   ---------------------------------------------->
         <div class="flex gap-x-5 justify-center items-center ">
-            <!-- <div class="w-">
-                <label class="switch" id="switch" onclick="darkModeOn()">
-                    <input type="checkbox">
-                    <span class="slider"></span>
-                </label>
-            </div> -->
+
 
             <div class=" flex space-x-3">
                 <button> <img src="./img/ingles.png" class="max-w-[35px]" alt=""> </button>
@@ -90,12 +85,13 @@
 
     <!-------------------------------About Me   ---------------------------------------------->
 
-    <div id="aboutMe" class="text-white p-10 flex  gap-x-5 max-w-7xl" style="min-height: 300px; ">
+    <div id="aboutMe" class="text-white p-10 flex  gap-x-5 justify-center lg:px-0 max-w-7xl "
+        style="min-height: 300px; ">
 
-        <div class="mt-0 md:mt-7 sm:mx-auto ">
+        <div class="mt-0 md:mt-7 sm:mx-auto  ">
 
             <!--------  Efecto Moving Leters  .------------ -->
-            <h1 data-aos="fade-left" class="ml11">
+            <h1 data-aos="fade-left" class="ml11 ">
                 <span class="text-wrapper">
                     <span class=" hidden md:flex text-5xl font-black ">
                         Hello, i am <b class="text-red-500"> &nbsp Web developer.</b>
@@ -182,7 +178,7 @@
     <!------------------- Carrousel---------------- -->
     <div id="wrapper">
         <div class="carrousel" id="carousel py-24">
-            <div class="flex mx-auto w-4/5 content overflow-x-auto p-16 flex gap-x-6" id="content  ">
+            <div class="flex mx-auto justify-center w-4/5 content overflow-x-auto p-16 flex gap-x-6" id="content">
 
 
                 <img src="./img/lenguajes/color/lenguajereactcolor.png" alt="">
@@ -385,12 +381,12 @@
 
                     <div>
 
-                        <li class="flex"> <img src="./img/juampicv.jpg"
+                        <li data-aos="fade-left" class="flex"> <img src="./img/juampicv.jpg"
                                 class=" rounded-full w-[150px] border-red-700 border border-4" alt="">
                         </li>
 
 
-                        <ul class=" space-y-3  mt-4 text-sm">
+                        <ul data-aos="fade-right" class=" space-y-3  mt-4 text-sm">
                             <li class="flex items-center">
                                 <a target="blank" href="https://www.linkedin.com/in/juan-pablo-parada-cao-7a51a7237/">
                                     <img src="./img/linkedin.png" class="min-w-[40px]" alt="linkedin"> </a>
