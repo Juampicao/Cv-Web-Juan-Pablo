@@ -27,4 +27,5 @@ botonShowProyects.addEventListener("click", () => {
   proyecto1Oculto.classList.toggle("hidden");
   proyecto2Oculto.classList.toggle("hidden");
   proyecto3Oculto.classList.toggle("hidden");
+  botonShowProyects.classList.toggle("hidden");
 });
