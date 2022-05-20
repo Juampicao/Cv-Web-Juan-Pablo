@@ -344,7 +344,6 @@ button:hover .button-text {
 .carrousel {
   overflow: auto;
   width: 100%;
-
 }
 
 .content > img {
@@ -353,7 +352,6 @@ button:hover .button-text {
   min-width: 5rem;
   overflow: auto;
 }
-
 
 /* Fin  Carrousel  Lenguajes Propgramacion*/
 
@@ -370,3 +368,31 @@ button:hover .button-text {
 button {
  transition-duration: 350ms;
 }
+
+/* Ocultar proyectos  */
+#proyecto1Oculto, #proyecto2Oculto, #proyecto3Oculto, #contenedorProyectoOculto  {
+ /* style.transitionDuration = "1s" */
+}
+
+/* From uiverse.io by @adamgiebl */
+.cssbuttons-io {
+position: relative;
+}
+
+.cssbuttons-io svg {
+ width: 1.2em;
+ height: 1.2em;
+ margin-right: 0.5em;
+}
+
+.cssbuttons-io span {
+ position: relative;
+ z-index: 10;
+ transition: color 0.4s;
+ display: inline-flex;
+ align-items: center;
+ padding: 0.8em 1.2em 0.8em 1.05em;
+}
+
+
+
