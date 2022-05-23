@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="input.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Juan Pablo Parada Cao</title>
+</head>
+
+<body class="scroll-smooth text-white  " id="body">
+
+
+
+
+    <!-------------------------------Inicio NAVBAR  ---------------------------------------------->
+
+    <nav class=" flex items-center justify-between flex-wrap p-6">
+
+        <!-------------------------------DarkMode y Lenguaje   ---------------------------------------------->
+        <div class="flex gap-x-5 justify-center items-center ">
+
+
+            <div class=" flex space-x-3">
+                <button> <img src="../img/ingles.png" class="max-w-[35px]" alt=""> </button>
+                <button> <img src="../img/españa.png" class="max-w-[35px]" alt=""> </button>
+
+            </div>
+        </div>
+        <!-------------------------------Inicio NAVBAR  ---------------------------------------------->
+
+
+        <div class="flex items-center flex-shrink-0 text-white mr-6">
+            <a href="#banner" class="flex items-start">
+                <img src="./img/logo.png" alt="">
+                <!-- <img src="./img/logo2.png" alt=""> -->
+            </a>
+        </div>
+        <div class="block md:hidden">
+            <button id="boton"
+                class="button-nav flex items-center px-3 py-2 border rounded text-white border-stone-400 hover:text-white hover:border-white">
+                <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <title>Menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                </svg>
+            </button>
+        </div>
+        <div id="menu" class="w-full  flex-grow-reverse   hidden  md:flex md:items-center md:w-auto">
+            <div class="text-sm md:flex-grow uppercase sm:mt-0  ">
+
+                <a href="#aboutMe"
+                    class="pt-4 block mt-4 md:inline-block md:mt-0 text-white hover:text-white mr-4 hover:border-b-4 hover:border-red-500">
+                    About Me </a>
+                <a href="#skills"
+                    class="block mt-4 md:inline-block md:mt-0 text-white hover:text-white mr-4 hover:border-b-4 hover:border-red-500">
+                    Skills
+                </a>
+                <a href="#proyects"
+                    class="block mt-4 md:inline-block md:mt-0 text-white hover:text-white mr-4 hover:border-b-4 hover:border-red-500">
+                    Proyects
+                </a>
+                <a href="#contact"
+                    class="block mt-4 md:inline-block md:mt-0 text-white hover:text-white mr-4 hover:border-b-4 hover:border-red-500">
+                    Contact
+                </a>
+                <a href="#cv"
+                    class="block mt-4 md:inline-block md:mt-0 text-white hover:text-white mr-4 hover:border-b-4 hover:border-red-500">
+                    Cv
+                </a>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-------------------------------FIN NAVBAR  ---------------------------------------------->
+
+
+
+
+    <!-------------------------------About Me   ---------------------------------------------->
+
+    <div id="aboutMe" class="text-white p-10 flex  gap-x-5 justify-center lg:px-0 max-w-7xl "
+        style="min-height: 300px; ">
+
+        <div class="mt-0 md:mt-7 sm:mx-auto  ">
+
+            <!--------  Efecto Moving Leters  .------------ -->
+            <h1 data-aos="fade-left" class="ml11 ">
+                <span class="text-wrapper">
+                    <span class=" hidden md:flex text-5xl font-black ">
+                        Hello, i am <b class="text-red-500"> &nbsp Web developer.</b>
+                    </span>
+                    <span class=" xs md:hidden text-5xl font-black "> Hello, <br> i Am a <br> <b class="text-red-500">
+                            Web
+                            developer. </b> </span>
+
+                </span>
+            </h1>
+
+            <div>
+                <img src="./img/juampiemoji1cortado.png" class="flex my-3 sm:hidden max-w-[150px] sm:max-w-[250px] "
+                    alt="">
+            </div>
+
+            <div class="block space-y-3 xs:flex xs:space-y-0 xs:gap-x-2 sm:my-5 ">
+                <a href="#contact"> <button type="menu" id="contactButton"
+                        class="text-white bg-red-500 hover:bg-red-900   py-2 px-10   block  border  border-white  rounded-sm uppercase ">
+                        Contact Me
+                    </button> </a>
+                <a href="/img/Cv Parada Cao Juan Pablo 2022.pdf" download="ParadaCaoJuanPablo_CV"> <button type="menu"
+                        id="cvButton"
+                        class="text-white bg-slate-200 text-zinc-900 hover:bg-slate-500 hover:text-white py-2 px-9   block  border  border-white  rounded-sm uppercase  ">
+                        Download Cv
+                    </button> </a>
+            </div>
+
+            <!-- <p class="mt-10"> Always Learning</p> -->
+
+            <p class="italic mt-5"> "You cant connect the dots looking forward, you can only connect them looking
+                backward."
+                <span> - Steve
+                    Jobs</span>
+            </p>
+        </div>
+
+        <div>
+            <img src="./img/juampiemoji1cortado.png"
+                class="hidden sm:flex max-w-[150px] sm:max-w-[250px] justify-start " alt="">
+        </div>
+    </div>
+
+    <!------------------------------- Fin About Me   ---------------------------------------------->
+
+
+    <!---------------------------------------- Inicio Skills  ----------------------------------------------->
+
+    <!-- Linea divisoria roja -->
+    <div class="lineaRojaDivsioria"></div>
+    <!-- Linea divisoria roja -->
+
+    <main id="skills" class="p-5 ">
+        <p class="text-red-500">What i do</p>
+        <h1 class="text-5xl ">Skills</h1>
+
+        <div
+            class="max-w-7xl  my-10 flex flex-col gap-y-5 md:grid md:grid-cols-3 md:justify-between md:gap-x-0 md:gap-y-0 md:mx-auto">
+            <!-- <div class="flex flex-col space-y-5  sm:justify-center sm:gap-x-3"> -->
+            <div data-aos="fade-right"
+                class="border border-red-500 p-5 min-w-[200px] max-w-[300px] min-h-[100px] mx-auto">
+                <h3> Web Development </h3>
+                <p class="pt-2 text-sm text-slate-400 tracking-wider"> React, Javascript, Node, Express, Html, css,
+                    tailwind,
+                    bootstrap, github,
+                </p>
+
+            </div>
+            <div data-aos="fade-left"
+                class="border border-red-500 p-5 min-w-[200px] max-w-[300px] min-h-[100px] mx-auto">
+                <h3> Responsive Design </h3>
+                <p class="pt-2 text-sm text-slate-400 tracking-wider"> Mobile First, users spend most of their time on
+                    mobile phones.</p>
+
+            </div>
+            <div data-aos="fade-right"
+                class="border border-red-500 p-5 min-w-[200px] max-w-[300px] min-h-[100px] mx-auto">
+                <h3> Solve Problems </h3>
+                <p class="pt-2 text-sm text-slate-400 tracking-wider"> I think Developing as solving problem tool.
+                    Everything can be better or faster. </p>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!------------------- Carrousel---------------- -->
+    <div id="wrapper">
+        <div class="carrousel" id="carousel py-24">
+            <div class="flex mx-auto sm:justify-center  sm:w-4/5 content overflow-x-auto  p-16 flex gap-x-6 mb-10"
+                id="content">
+
+
+                <img src="./img/lenguajes/color/lenguajereactcolor.png" alt="">
+                <img src="./img/lenguajes/color/lenguajejavascriptcolor.png" alt="">
+                <img src="./img/lenguajes/color/lenguajeNodeColor2.svg" alt="">
+                <img src="./img/lenguajes/color/html.png" alt="">
+                <img src="./img//lenguajes/color/css.png" alt="">
+                <img src="./img/lenguajes/color/tailwind.svg" alt="">
+                <img src="./img/lenguajes/color/lenguajeexpresscolor.svg" alt="">
+                <img src="./img/lenguajes/negro/githubNegro.png" alt="">
+                <img src="./img/lenguajes/color/Boostrap.png" alt="">
+
+            </div>
+        </div>
+
+    </div>
+
+    <!------------------- Carrosuel  ------------------------->
+
+    <!---------------------------------------- Fin Skills  ----------------------------------------------->
+
+
+    <!---------------------------------------- Inicio Prueba Proyectos ----------------------------------------------->
+    <!-- Linea divisoria roja -->
+    <div class="lineaRojaDivsioria"></div>
+    <!-- Linea divisoria roja -->
+
+    <section id="proyectos1" class="p-5  ">
+        <p class="text-red-500">Learning By Doing</p>
+
+        <h1 class="text-5xl mb-5">Proyects </h1>
+        <div class="contenedor 
+            space-y-5    gap-x-2
+            flex flex-col w-4/5 mx-auto
+            md:w-full md:grid md:grid-cols-3 md:space-y-0  md:gap-x-5 md:w-11/12
+            lg:gap-x-6 max-w-7xl 
+            ">
+
+            <!-- 1 proyecto individual -->
+            <div data-aos="flip-left"
+                class="contenedor_proyecto p-5 lg:p-10 mx-auto text-left bg-slate-900 space-y-5 rounded-xl  ">
+                <img src="./img/finalProyectoCripto.png" class="contenedor_proyectos_imagen flex mx-auto"
+                    alt="proyecto1">
+                <!-- texto -->
+                <div class="flex">
+                    <div class="mx-auto">
+                        <h3 class="text-red-500 text-xl">Cotiza Criptomonedas</h3>
+                        <ul class="mt-2">
+                            <li class="flex space-x-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check"
+                                    width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff"
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M5 12l5 5l10 -10" />
+                                </svg>
+                                <p>React</p>
+                            </li>
+                            <li class="flex space-x-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check"
+                                    width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff"
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M5 12l5 5l10 -10" />
+                                </svg>
+                                <p>Styled Components</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- texto -->
+                <!-- botones -->
+                <div class="flex justify-evenly">
+                    <button class="px-2 py-2 sm:px-5 sm:py-2 bg-slate-500 rounded-lg hover:bg-slate-700 "> <a
+                            target="_blank" href="https://cotizatuscripto.netlify.app/">Site Web</a>
+
+                    </button>
+                    <button class=" px-2 sm:px-5 bg-slate-500 rounded-lg hover:bg-slate-700 "> <a target="_blank" href="https://github.com/Juampicao/cotizadorCriptomonedasFinal
+    ">
+                            <span class="px-1"> Code </span>
+                        </a>
+                    </button>
+                    <!-- botones -->
+                </div>
+            </div>
+            <!-- fin proyecto individual -->
+
+
+
+            <!-- 2 proyecto individual -->
+            <div data-aos="flip-left"
+                class="contenedor_proyecto p-5 lg:p-10 mx-auto text-left bg-slate-900 space-y-5 rounded-xl  ">
+                <img src="./img/finalProyectoVeterinaria.png" class="contenedor_proyectos_imagen flex mx-auto"
+                    alt="proyecto1">
+                <!-- texto -->
+                <div class="flex">
+                    <div class="mx-auto">
+                        <h3 class="text-red-500 text-xl">Citas Veterinaria</h3>
+                        <ul class="mt-2">
+                            <li class="flex space-x-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check"
+                                    width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff"
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M5 12l5 5l10 -10" />
+                                </svg>
+                                <p>React</p>
+                            </li>
+                            <li class="flex space-x-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check"
+                                    width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff"
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M5 12l5 5l10 -10" />
+                                </svg>
+                                <p>Tailwind</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- texto -->
+                <!-- botones -->
+
+                <div class="flex justify-evenly">
+                    <button class="px-2 py-2 sm:px-5 sm:py-2 bg-slate-500 rounded-lg hover:bg-slate-700 "> <a
+                            target="_blank" href="https://citasreact2.netlify.app/">Site Web</a>
+
+                    </button>
+                    <button class=" px-2 sm:px-5 bg-slate-500 rounded-lg hover:bg-slate-700 "> <a target="_blank"
+                            href="https://github.com/Juampicao/citas_veterinarias_react">
+                            <span class="px-1"> Code </span>
+                        </a>
+                    </button>
+                    <!-- botones -->
+
+                </div>
+
+            </div>
+
+            <!-- 2 fin proyecto individual -->
+
+            <!-- 3 proyecto individual -->
+            <div data-aos="flip-left"
+                class="contenedor_proyecto p-5 lg:p-10 mx-auto text-left bg-slate-900 space-y-5 rounded-xl ">
+                <img src="./img/finalProyectoJuegoMemoria.png" class="contenedor_proyectos_imagen flex mx-auto"
+                    alt="proyecto1">
+                <!-- texto -->
+                <div class="flex">
+                    <div class="mx-auto">
+                        <h3 class="text-red-500 text-xl">Juego Memoria</h3>
+                        <ul class="mt-2">
+                            <li class="flex space-x-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check"
+                                    width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff"
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M5 12l5 5l10 -10" />
+                                </svg>
+                                <p>Javascript</p>
+                            </li>
+                            <li class="flex space-x-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check"
+                                    width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff"
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M5 12l5 5l10 -10" />
+                                </svg>
+                                <p>Css</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- texto -->
+                <!-- botones -->
+                <div class="flex justify-evenly">
+                    <button class="px-2 py-2 sm:px-5 sm:py-2 bg-slate-500 rounded-lg hover:bg-slate-700 "> <a
+                            target="_blank" href="https://juegomemoriajuampi.netlify.app/">Site Web</a>
+
+                    </button>
+                    <button class=" px-2 sm:px-5 bg-slate-500 rounded-lg hover:bg-slate-700 "> <a target="_blank"
+                            href="https://github.com/Juampicao/JuegoMemoriaJavascript">
+                            <span class="px-1"> Code </span>
+                        </a>
+                    </button>
+                    <!-- botones -->
+                </div>
+            </div>
+            <!-- 3 fin proyecto individual -->
+
+
+            <!-- Fin container_proyecto primera parte -->
+    </section>
+
+
+    <!-- Boton ver mas proyectos -->
+    <div class="flex py-10 items-center justify-center mx-auto">
+        <button id="buttonShowProyects" class="px-5 py-2 bg-slate-500 rounded-lg hover:bg-slate-700 "> See
+            more
+            Proyects
+        </button>
+    </div>
+    <!-- Boton ver mas proyectos -->
+
+
+    <!-- Inicio 2°  container_proyecto -->
+    <section id="proyectos2" class="p-5">
+
+
+        <div id=" contenedorProyectoOculto" class="contenedor 
+        space-y-5    gap-x-2
+        flex flex-col w-4/5 mx-auto
+        md:w-full md:grid md:grid-cols-3 md:space-y-0  md:gap-x-5 md:w-11/12
+        lg:gap-x-6 max-w-7xl 
+        mb-10
+        ">
+
+            <!-- 4 proyecto individual -->
+            <div id="proyecto1Oculto" data-aos="flip-left"
+                class="hidden contenedor_proyecto p-5 lg:p-10 mx-auto text-left bg-slate-900 space-y-5 rounded-xl ">
+                <img src="./img/finalProyectoEnecuatro.png" class="contenedor_proyectos_imagen flex mx-auto"
+                    alt="proyecto1">
+                <!-- texto -->
+                <div class="flex">
+                    <div class="mx-auto">
+                        <h3 class="text-red-500 text-xl">Proyecto Enecuatro</h3>
+                        <ul class="mt-2">
+                            <li class="flex space-x-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check"
+                                    width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff"
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M5 12l5 5l10 -10" />
+                                </svg>
+                                <p>Html</p>
+                            </li>
+                            <li class="flex space-x-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check"
+                                    width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff"
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M5 12l5 5l10 -10" />
+                                </svg>
+                                <p>Tailwind</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- texto -->
+                <!-- botones -->
+                <div class="flex justify-evenly">
+                    <button class="px-2 py-2 sm:px-5 sm:py-2 bg-slate-500 rounded-lg hover:bg-slate-700 "> <a
+                            target="_blank" href="https://enecuatro.netlify.app/">Site Web</a>
+
+                    </button>
+                    <button class=" px-2 sm:px-5 bg-slate-500 rounded-lg hover:bg-slate-700 "> <a target="_blank" href="https://github.com/Juampicao/EnecuatroFinal
+            ">
+                            <span class="px-1"> Code </span>
+                        </a>
+                    </button>
+                    <!-- botones -->
+                </div>
+            </div>
+            <!-- 4 fin proyecto individial -->
+
+            <!--5 proyecto individual -->
+            <div id="proyecto2Oculto" data-aos="flip-left"
+                class="hidden contenedor_proyecto p-5 lg:p-10 mx-auto text-left bg-slate-900 space-y-5 rounded-xl ">
+                <img src="./img/finalProyectoPresupuesto.png" class="contenedor_proyectos_imagen flex mx-auto"
+                    alt="proyecto1">
+                <!-- texto -->
+                <div class="flex">
+                    <div class="mx-auto">
+                        <h3 class="text-red-500 text-xl">Controla Tus Gastos</h3>
+                        <ul class="mt-2">
+                            <li class="flex space-x-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check"
+                                    width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff"
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M5 12l5 5l10 -10" />
+                                </svg>
+                                <p>React</p>
+                            </li>
+                            <li class="flex space-x-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check"
+                                    width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff"
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M5 12l5 5l10 -10" />
+                                </svg>
+                                <p>Tailwind</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- texto -->
+                <!-- botones -->
+                <div class="flex justify-evenly">
+                    <button class="px-2 py-2 sm:px-5 sm:py-2 bg-slate-500 rounded-lg hover:bg-slate-700 "> <a
+                            target="_blank" href="https://controlatugastos.netlify.app/">Site Web</a>
+
+                    </button>
+                    <button class=" px-2 sm:px-5 bg-slate-500 rounded-lg hover:bg-slate-700 "> <a target="_blank"
+                            href="https://github.com/Juampicao/presupuestoControlGastos">
+                            <span class="px-1"> Code </span>
+                        </a>
+                    </button>
+                    <!-- botones -->
+                </div>
+            </div>
+            <!-- 5 FIN proyecto individual -->
+
+
+            <!-- 6 proyecto individual -->
+            <div id="proyecto3Oculto" data-aos="flip-left"
+                class="hidden contenedor_proyecto p-5 lg:p-10 mx-auto text-left bg-slate-900 space-y-5 rounded-xl ">
+                <img src="./img/finalProyectoCripto.png" class="contenedor_proyectos_imagen flex mx-auto"
+                    alt="proyecto1">
+                <!-- texto -->
+                <div class="flex">
+                    <div class="mx-auto">
+                        <h3 class="text-red-500 text-xl">Cotiza tus Criptomonedas</h3>
+                        <ul class="mt-2">
+                            <li class="flex space-x-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check"
+                                    width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff"
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M5 12l5 5l10 -10" />
+                                </svg>
+                                <p>React</p>
+                            </li>
+                            <li class="flex space-x-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check"
+                                    width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff"
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M5 12l5 5l10 -10" />
+                                </svg>
+                                <p>Tailwind</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- texto -->
+                <!-- botones -->
+                <div class="flex justify-evenly">
+                    <button class="px-2 py-2 sm:px-5 sm:py-2 bg-slate-500 rounded-lg hover:bg-slate-700 "> <a
+                            target="_blank" href="https://cotizatuscripto.netlify.app/">Site Web</a>
+
+                    </button>
+                    <button class=" px-2 sm:px-5 bg-slate-500 rounded-lg hover:bg-slate-700 "> <a target="_blank"
+                            href="https://github.com/Juampicao/cotizadorCriptomonedasFinal">
+                            <span class="px-1"> Code </span>
+                        </a>
+                    </button>
+                    <!-- botones -->
+                </div>
+            </div>
+            <!-- 6 fin proyecto individual -->
+
+        </div>
+    </section>
+    <!-- Fin 2°  container_proyecto -->
+
+
+
+
+    <!---------------------------------------- Inicio Contacto  ----------------------------------------------->
+
+    <!-- Linea divisoria roja -->
+    <div class="lineaRojaDivsioria"></div>
+    <!-- Linea divisoria roja -->
+
+    <div id="contact" class="p-5 text-white tracking-wider  ">
+
+        <h1 class="uppercase  text-5xl mt-5">contact me</h1>
+
+
+        <div data-aos="fade-rigth" class="max-w-7xl py-5 mx-auto text-center sm:grid sm:grid-cols-2">
+            <div class=" capitalize ">
+                <!-- <h1 class="uppercase  text-5xl mt-5">contact</h1> -->
+
+                <div class="grid grid-cols-2 sm:flex sm:justify-center sm:mx-auto ">
+
+                    <div>
+
+                        <li data-aos="fade-left" class="flex"> <img src="./img/juampicv.jpg"
+                                class=" rounded-full w-[150px] border-red-700 border border-4" alt="">
+                        </li>
+
+
+                        <ul data-aos="fade-right" class=" space-y-3  mt-4 text-sm">
+                            <li class="flex items-center">
+                                <a target="blank" href="https://www.linkedin.com/in/juan-pablo-parada-cao-7a51a7237/">
+                                    <img src="./img/linkedin.png" class="min-w-[40px]" alt="linkedin"> </a>
+                                <a target="blank" href="https://www.linkedin.com/in/juan-pablo-parada-cao-7a51a7237/"
+                                    class="pl-4">
+                                    Linkedin </a>
+
+                            </li>
+                            <li class="flex items-center">
+                                <a target="blank" href="https://wa.me/1132870046"> <img src="./img/whatsapp.png"
+                                        class="min-w-[40px]" alt="Whatsapp">
+                                </a>
+                                <a target="blank" href="https://wa.me/1132870046" class="pl-4">
+                                    whatsapp</a>
+                            </li>
+                            <li class="flex items-center">
+                                <a target="blank" href="https://wa.me/1132870046"> <img src="./img/mail.png"
+                                        class="min-w-[45px]" alt="">
+                                </a>
+                                <a target=" blank" href="https://wa.me/1132870046" class="pl-4 text-xs ">
+                                    paradacao.juan@gmail.com</a>
+                            </li>
+                            <li class="flex items-center">
+                                <a target="blank" href="https://wa.me/1132870046"> <img src="./img/githubrojo.png"
+                                        class="min-w-[50px]" alt="">
+                                </a>
+                                <a target=" blank" href="https://github.com/Juampicao?tab=repositories" class="pl-4 ">
+                                    Github</a>
+                            </li>
+                    </div>
+
+
+
+
+
+                </div>
+
+
+
+                </ul>
+            </div>
+            <form action="submit" class="text-black mt-10 sm:mt-0">
+                <div class="grid grid-rows-5 gap-4 mt-5 mx-3 sm:mr-10 md:mr-20">
+                    <input type="text" placeholder="Nombre" class="p-4 py-3  w-full border rounded-sm">
+                    <input type="text" placeholder="Email" class="p-4 py-3 w-full  border rounded-sm">
+                    <input type="text" placeholder="Empresa" class="p-4 py-3 w-full border rounded-sm">
+                    <input type="text" placeholder="Mensaje" class="p-4 py-3 w-full border rounded-sm row-span-2">
+
+                </div>
+                <div class="flex justify-center sm:justify-start">
+                    <button id="enviar" type="button"
+                        class="text-white sm:ml-3 bg-white text-zinc-900 hover:bg-slate-300  py-2 px-14  my-5 block  border  border-white  rounded-sm uppercase ">
+                        enviar
+                    </button>
+                </div>
+            </form>
+
+        </div>
+        <a href="/img/Cv Parada Cao Juan Pablo 2022.pdf" download="ParadaCaoJuanPablo_CV"> <button type="menu" id="cv"
+                class=" items-center flex mx-auto tracking-wider text-white bg-white text-zinc-900 hover:bg-white py-2 px-10  my-5 block  border  border-white  rounded-sm uppercase ">
+                <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
+                </svg>
+
+                Download cv
+            </button> </a>
+    </div>
+
+
+    <!---------------------------------------- Fin Contacto  ----------------------------------------------->
+
+    <!---------------------------------------- OTROS  ----------------------------------------------->
+
+    <!---------------------------------------- OTROS  ----------------------------------------------->
+
+    <!---------------------------------------- Footer  ----------------------------------------------->
+
+    <!-- Linea divisoria roja -->
+    <div class="lineaRojaDivsioria"></div>
+    <!-- Linea divisoria roja -->
+
+
+    <footer class="max-w-[1500px] mx-auto">
+
+
+        <div class="p-5 text-center flex justify-between w-4/5 mx-auto">
+            <p>Parada Cao Juan Pablo</p>
+            <p>2022</p>
+
+        </div>
+
+    </footer>
+
+    <!---------------------------------------- Fin  Footer  ----------------------------------------------->
+
+
+    <script src="./app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>     AOS.init({
+            duration: 1500,
+        }) 
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    'xs': '320px',
+
+                    'sm': '550px',
+                    // => @media (min-width: 640px) { ... }
+
+                    'md': '749px',
+                    // => @media (min-width: 768px) { ... }
+
+                    'lg': '1024px',
+                    // => @media (min-width: 1024px) { ... }
+
+                    'xl': '1280px',
+                    // => @media (min-width: 1280px) { ... }
+
+                    '2xl': '1536px',
+                    // => @media (min-width: 1536px) { ... }
+                },
+            }
+        }
+    </script>
+</body>
+
+</html>
